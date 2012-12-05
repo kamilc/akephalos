@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.summary     = "Headless Browser for Integration Testing with Capybara"
   s.description = s.summary
 
-  s.required_rubygems_version = "< 2.1"
+  s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "akephalos"
 
-  s.add_runtime_dependency "capybara", "~> 0.4.0"
+  s.add_runtime_dependency "capybara", "< 2.1"
 
   if RUBY_PLATFORM != "java" && ENV["PLATFORM"] != "java"
     s.add_runtime_dependency "jruby-jars"
